@@ -11,7 +11,7 @@
 	"bugs": {
 		"url": "https://github.com/Microsoft/vscode-nls/issues"
 	},
-	"main": "./lib/node/main.js",
+	"main": "./src/browser/main.ts",
 	"browser": {
 		"./lib/node/main.js": "./lib/browser/main.js"
 	},
