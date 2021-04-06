@@ -32,5 +32,5 @@
 		"clean": "rimraf lib",
 		"test": "mocha",
 		"lint": "eslint --config .eslintrc.json ./**/*.ts"
-	},
+	}
 }
