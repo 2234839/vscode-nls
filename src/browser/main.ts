@@ -11,6 +11,8 @@ export { MessageFormat, BundleFormat, Options, LocalizeInfo, LocalizeFunc, LoadF
 
 export function loadMessageBundle(_file?: string) {
 	return function (key: string | number | LocalizeInfo, message: string, ...args: any[]): string {
+		console.log('[message]',message)
+
 		if (typeof key === 'number') {
 			throw new Error(`Browser implementation does currently not support externalized strings.`);
 		} else {
