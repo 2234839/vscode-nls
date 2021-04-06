@@ -33,15 +33,4 @@
 		"test": "mocha",
 		"lint": "eslint --config .eslintrc.json ./**/*.ts"
 	},
-	"files": [
-		"lib/common",
-		"lib/browser",
-		"lib/node",
-		"!lib/*/test",
-		"!lib/**/*.tsbuildinfo",
-		"node.js",
-		"node.d.ts",
-		"browser.js",
-		"browser.d.ts"
-	]
 }
