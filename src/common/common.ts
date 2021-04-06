@@ -123,7 +123,19 @@ export function format(message: string, args: any[]): string {
 	return result;
 }
 
+export const preproccess ={
+
+} as {
+  localize?: typeof localize
+  format?: typeof format
+}
 export function localize(_key: string | LocalizeInfo, message: string, ...args: any[]): string {
+	if(preproccess.localize){
+		return preproccess.localize(_key,message,args)
+	}
+	if(preproccess.format){
+		return preproccess.format(message,args)
+	}
 	return format(message, args);
 }
 
